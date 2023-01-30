@@ -1,3 +1,29 @@
+.profileImg {
+  box-shadow: inset;
+  padding-top: 0.25rem;
+  padding-inline: 0.25rem;
+  border: 2px solid;
+  border-radius: calc(3px);
+}
+
 h1 {
-  color: yellow;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card {
+  margin: 0.1rem;
+  padding: 0rem !important;
+}
+
+.dataDisplay {
+  font-size: 22px;
+  padding-bottom: 0.2rem;
+}
+
+.aboutMeDisplay {
+  font-size: 18px;
+  padding-bottom: 0.2rem;
+  padding-top: 1rem;
+  text-align: justify;
 }

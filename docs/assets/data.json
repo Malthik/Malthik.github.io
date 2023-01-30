@@ -1,0 +1,187 @@
+{
+  "name": "Gustavo Medrado Malthik",
+  "addressLine": "Rua Paulo Fernandes Rocha, 702, Castanheiras II",
+  "addressLocalRef": "Governador Valadares • MG • 35054-874",
+  "phone": "33 99948-1818",
+  "email": "gustavo_malthik@hotmail.com",
+  "linkedIn": "https://www.linkedin.com/in/gustavo-malthik/",
+  "gitHub": "https://github.com/Malthik",
+  "qualities": ["Acelerado", "Inquieto", "Movido a resultados"],
+  "aboutMeTitle": "Sobre mim",
+  "aboutMe": "Alinhando mais de uma década de estudo e experiência em gestão para realizar desenvolvimentos de software otimizando entregas e custo, gerando valor agregado com visão empreendedora e sentimento de dono.",
+  "experienceTitle": "A minha experiência até aqui",
+  "professionalXps": [
+    "A primeira experiência, como um desenvolvedor júnior, foi um projeto de um sistema bancário - aplicativo em flutter, sistema administrativo em angular e API em dotnet, onde o trabalho integrar com uma API rest, seguindo as regras de negócios do parceiro e criar o aplicativo a partir do design estabelecido pelo cliente.",
+    "O desafio maior era o prazo: 30 dias.",
+    "Eu não sabia nada direito, tudo era novidade, mas logo a dificuldade virou motivação. Percebi que eu não tinha de ter medo do desconhecido, muito menos me abalar por algo errado, quando aprendi que errar faz parte do processo de desenvolvimento, tratando exceções e conhecendo os cenários. Fiz do meu ponto forte meus testes, ainda na primeira semana de trabalho já estava registrando tudo de maneira organizada, criando histórico de testes e levantando dúvidas que acabaram se tornando fundamentais para que o projeto tivesse um bom andamento.",
+    "O segundo projeto foi uma replicação do primeiro, porém com a inclusão de novas features e um novo layout. Nesse já me sentia confortável, conhecia tudo o que foi feito no anterior e a experiência começou a me fazer ter um olhar mais crítico, conseguindo refatorar uma boa parte do projeto inicial.",
+    "O terceiro foi um desafio diferente, assumi a entrega de uma corretora as a service. Uma corretora feita do zero. Para tanto, precisei criar ferramentas de controle e acompanhar diariamente a evolução do projeto como todo, quando precisei me aproximar mais da área de negócios.",
+    "O projeto necessitava de uma nova modelagem devido à complexidade, já era uma dezena de integrações, não só API restfull, mas SOAP e também via procedure. Foram exaustivos meses, debruçando em regras de negócios e fazendo benchmarking para criar uma ótima experiência tanto para o cliente final quanto para a equipe de back-office.",
+    "Assim que foi finalizado, voltei ao banking com um novo desafio, estruturar um white label, que fosse escalável e modular. Fui solicitado a assumir o projeto para remodelar utilizando como base a corretora, trazendo consigo os benefícios criados pela nova arquitetura.",
+    "Aproveitando das experiências adquiridas no outro projeto, criei novas funcionalidades, modulares, que pudessem ser acopladas e desacopladas, de acordo com o cliente. Fui participativo e decisivo em módulos como tarifação, conciliação de pagamentos, sistema de representação, sistema de indicação, entre outros...",
+    "Com o crescimento do projeto, consegui dar foco em outras coisas voltadas à experiência do usuário, com um maior uso do firebase e do Google services.",
+    "Com o projeto de banking crescendo e com a possibilidade de se tornar um projeto altamente vendável, a empresa adquiriu um framework chamado ABP, a fim de aproveitar da sua arquitetura e das ferramentas de segurança e escala disponíveis. Hoje trabalho entendendo a viabilidade de separarmos os módulos do banking em microsserviços, conhecendo e mapeando os desafios técnicos."
+  ],
+  "developmentToolsTitle": "Algumas coisas que eu uso no meu dia a dia",
+  "developmentTools": [
+    {
+      "name": ".Net",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+    },
+    {
+      "name": "Angular",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+    },
+    {
+      "name": "Flutter",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+    },
+    {
+      "name": "C#",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+    },
+    {
+      "name": "Dart",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"
+    },
+    {
+      "name": "HTML5",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+    },
+    {
+      "name": "Typescript",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+    },
+    {
+      "name": "CSS",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+    },
+    {
+      "name": "Docker",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+    },
+    {
+      "name": "Kubernetes",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+    },
+    {
+      "name": "Firebase",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+    },
+    {
+      "name": "Git",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+    },
+    {
+      "name": "GitHub",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+    },
+
+    {
+      "name": "npm",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+    },
+    {
+      "name": "yarn",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg"
+    },
+
+    {
+      "name": "Microsoft SQL Server",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+    }
+  ],
+  "knowledgementTitle": "Conheço e estou conhecendo",
+  "knowledgements": [
+    {
+      "name": "Linguagens",
+      "description": "C#, TypeScript, Dart, Java, JavaScript, Html5, CSS"
+    },
+    {
+      "name": "Frameworks",
+      "description": "Dotnet, Angular, Flutter, ABP, EF Core"
+    },
+    {
+      "name": "Banco de dados",
+      "description": "MSSQL, MySql, MongoDb"
+    },
+    {
+      "name": "Integrações",
+      "description": "APIs Rest, SOAP, GraphQL"
+    },
+    {
+      "name": "Arquitetura, metodologias e padrões de projeto",
+      "description": "MVC, Microsserviços, DDD, TDD, Singleton, Abstract Factory e princípios SOLID"
+    },
+    {
+      "name": "Versionamento, controle de tarefas e ferramentas auxiliares",
+      "description": "GitHub, GitBash, Notion, Monday, Postman, Visual Studio, Visual Studio  Code, Docker, Kubernetes, SQL Management Studio, Azure"
+    }
+  ],
+  "languageTitle": "Idiomas",
+  "languages": [
+    {
+      "name": "Português",
+      "level": "Língua nativa"
+    },
+    {
+      "name": "Inglês",
+      "level": "Conversação, Compreensão e Escrita em nível Intermediário"
+    },
+    {
+      "name": "Espanhol",
+      "level": "Conversação, Compreensão e Escrita em nível Básico"
+    }
+  ],
+  "educationalBackgroundTitle": "Formação acadêmica",
+  "educationalBackgrounds": [
+    {
+      "date": "Ago./2019 - Out./2020",
+      "institution": "Cruzeiro do Sul Virtual",
+      "course": "MBA EM GESTÃO DE PROCESSOS"
+    },
+    {
+      "date": "Mai./2017 - Mar./2019",
+      "institution": "Serviço Nacional de Aprendizagem Comercial",
+      "course": "MBA EM GESTÃO ESTRATÉGICA DE PESSOAS"
+    },
+    {
+      "date": "Mar./2018 - Dez./2018",
+      "institution": "Cruzeiro do Sul Virtual",
+      "course": "MBA EM GESTÃO EMPRESARIAL"
+    },
+    {
+      "date": "Fev./2008 - Mai./2015",
+      "institution": "Universidade Federal de Ouro Preto - UFOP",
+      "course": "BACHAREL EM ENGENHARIA DE PRODUÇÃO"
+    },
+    {
+      "date": "Jul./2003 - Dez./2005",
+      "institution": "Serviço Nacional de Aprendizagem Industrial",
+      "course": "MANUTENÇÃO DE MÁQUINAS INDUSTRIAIS"
+    }
+  ],
+  "professionalExperienceTitle": "Experiência profissional",
+  "professionalExperiences": [
+    {
+      "date": "Nov./2020 - Atual",
+      "company": "Evlosu4",
+      "lastPosition": "FullStack Developer"
+    },
+    {
+      "date": "Jul./2017 - Jul./2020",
+      "company": "Cruzeiro do Sul Educacional",
+      "lastPosition": "Coordenador Volante de Polo"
+    },
+    {
+      "date": "Set./2015 - Ago./2016",
+      "company": "WKVE Telecomunicações",
+      "lastPosition": "Gerente Comercial"
+    },
+    {
+      "date": "Jun./2010 - Out./2014",
+      "company": "Armarium - Móveis para Hotéis",
+      "lastPosition": "Gerente Administrativo"
+    }
+  ]
+}
