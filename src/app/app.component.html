@@ -1,189 +1,183 @@
-<p-card class="card">
-  <div
-    class="grid mt-3 flex align-items-center justify-content-center text-right"
-  >
-    <div class="grid ml-3 flex align-items-center justify-content-center">
-      <div
-        pAnimate
-        enterClass="flip"
-        leaveClass="fadeoutleft"
-        class="flex justify-content-center align-items-center h-10rem w-10rem border-round animation-duration-1000 animation-ease-out"
-      >
-        <p-image
-          src="./../assets/gustavomalthik.png"
-          alt="Image"
-          width="150"
-          class="profileImg"
-        ></p-image>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="row dataDisplay">
-        {{ data.addressLine }}
-      </div>
-      <div class="row dataDisplay">{{ data.addressLocalRef }}</div>
-      <div class="row dataDisplay">
-        <i class="pi pi-whatsapp" style="color: green"></i>
-        {{ data.phone }}
-      </div>
-      <div class="row dataDisplay">
-        <a href="mailto:{{ data.email }}"
-          ><img
-            src="https://img.shields.io/badge/Hotmail-%240077B6?color=2910D7&style=for-the-badge&logo=mailgun&logoColor=white"
-            target="_blank"
-        /></a>
-      </div>
-      <div class="row dataDisplay">
-        <a href="{{ data.linkedIn }}" target="_blank"
-          ><img
-            src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"
-            target="_blank"
-        /></a>
-      </div>
-    </div>
-
+<div class="lg:px-6 xl:px-6 lg:mx-8 xl:mx-8">
+  <p-card class="card">
     <div
-      class="col-12 flex align-items-center justify-content-center text-center py-0"
+      class="grid mt-3 flex align-items-center justify-content-center text-right"
     >
-      <h1>{{ data.name?.toUpperCase() }}</h1>
-    </div>
-  </div>
-</p-card>
-
-<p-card class="card">
-  <div class="px-1 dataDisplay mb-3">{{ data.aboutMeTitle }}</div>
-  <div class="card-container overflow-hidden">
-    <div class="flex flex-wrap flex align-items-center justify-content-center">
       <div
-        class="flex-1 md:flex-none bg-blue-600 flex align-items-center justify-content-center font-bold text-white m-2 px-5 py-3 border-round"
-        *ngFor="let quality of data.qualities"
+        class="profileImg flex align-items-center justify-content-center grid ml-3"
       >
-        {{ quality }}
-      </div>
-    </div>
-  </div>
-  <div class="px-2 aboutMeDisplaytext-justify">{{ data.aboutMe }}</div>
-</p-card>
-
-<p-card class="card">
-  <div class="relative" style="height: 300px">
-    <div class="absolute top-0 left-0 px-1 w-full dataDisplay">
-      {{ data.experienceTitle }}
-    </div>
-    <div
-      class="absolute overflow-auto surface-overlay mt-6 p-2 line-height-3 text-justify"
-      style="height: 250px"
-    >
-      <div *ngFor="let experience of data.professionalXps">
-        {{ experience }}
-      </div>
-    </div>
-  </div>
-</p-card>
-
-<p-card class="card">
-  <div class="px-1 dataDisplay mb-3">
-    {{ data.developmentToolsTitle }}
-  </div>
-  <p-carousel
-    [value]="data.developmentTools"
-    [numVisible]="4"
-    [numScroll]="4"
-    [autoplayInterval]="2000"
-  >
-    <ng-template let-developmentTool pTemplate>
-      <div
-        class="row flex align-items-center justify-content-center text-center dataDisplay"
-      >
-        <img src="{{ developmentTool.icon }}" height="100px" />
-        <div class="ml-2">{{ developmentTool.name }}</div>
-      </div>
-    </ng-template>
-  </p-carousel>
-</p-card>
-
-<p-card class="card">
-  <div class="px-1 dataDisplay mb-3">{{ data.knowledgementTitle }}</div>
-  <p-accordion>
-    <div *ngFor="let knowledgement of data.knowledgements; let i = index">
-      <p-accordionTab
-        header="{{ knowledgement.name }}"
-        [(selected)]="activeState[i]"
-      >
-        <p>{{ knowledgement.description }}</p>
-      </p-accordionTab>
-    </div>
-  </p-accordion>
-</p-card>
-
-<p-card class="card">
-  <div class="px-1 dataDisplay mb-3">{{ data.languageTitle }}</div>
-
-  <div class="py-2" *ngFor="let language of data.languages">
-    <p-fieldset>
-      <ng-template pTemplate="header"> {{ language.name }}</ng-template>
-      {{ language.level }}
-    </p-fieldset>
-    <!-- <div class="relative card-container blue-container py-1">
         <div
-          class="bg-blue-600 flex align-items-center justify-content-center text-center border-round"
-          style="min-width: 300px; min-height: 100px"
+          pAnimate
+          enterClass="flip"
+          leaveClass="fadeoutleft"
+          class="flex animation-duration-1000 animation-ease-out"
         >
-          <p class="font-bold text-white">{{ language.level }}</p>
-          <div
-            class="absolute bottom-0 left-0 bg-white border-round flex align-items-center justify-content-center text-center font-bold text-gray-900"
-            style="min-width: 120px; min-height: 70px"
-          >
-            {{ language.name }}
-          </div>
+          <p-image
+            src="./../assets/gustavomalthik.png"
+            alt="Image"
+            height="200"
+          ></p-image>
         </div>
-      </div> -->
-  </div>
-</p-card>
+      </div>
 
-<p-card class="card">
-  <div class="px-1 dataDisplay mb-3">{{ data.educationalBackgroundTitle }}</div>
-  <div class="overflow-hidden card-container indigo-container">
-    <div
-      class="overflow-auto border-round border-1 border-blue-600"
-      style="height: 200px"
-    >
-      <div *ngFor="let educationalBackground of data.educationalBackgrounds">
-        <div>
-          <div class="sticky top-0 font-bold text-white bg-blue-600 p-4">
-            {{ educationalBackground.institution }} -
-            {{ educationalBackground.date }}
-          </div>
-          <p class="surface-overlay p-4 m-0">
-            {{ educationalBackground.course }}
-          </p>
+      <div class="col ml-6">
+        <div class="row dataDisplay">
+          {{ data.addressLine }}
+        </div>
+        <div class="row dataDisplay">{{ data.addressLocalRef }}</div>
+        <div class="row dataDisplay">
+          <i class="pi pi-whatsapp" style="color: green"></i>
+          {{ data.phone }}
+        </div>
+        <div class="row dataDisplay">
+          <a href="mailto:{{ data.email }}"
+            ><img
+              src="https://img.shields.io/badge/Hotmail-%240077B6?color=2910D7&style=for-the-badge&logo=mailgun&logoColor=white"
+              target="_blank"
+          /></a>
+        </div>
+        <div class="row dataDisplay">
+          <a href="{{ data.linkedIn }}" target="_blank"
+            ><img
+              src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+              target="_blank"
+          /></a>
+        </div>
+      </div>
+
+      <div
+        class="col-12 flex align-items-center justify-content-center text-center py-0"
+      >
+        <h1>{{ data.name?.toUpperCase() }}</h1>
+      </div>
+    </div>
+  </p-card>
+
+  <p-card class="card">
+    <div class="px-1 dataDisplay mb-3">{{ data.aboutMeTitle }}</div>
+    <div class="card-container overflow-hidden">
+      <div
+        class="flex flex-wrap flex align-items-center justify-content-center"
+      >
+        <div
+          class="flex-1 md:flex-none border-2 border-blue-600 flex align-items-center justify-content-center font-bold text-white m-2 px-5 py-3 border-round"
+          *ngFor="let quality of data.qualities"
+        >
+          {{ quality }}
         </div>
       </div>
     </div>
-  </div>
-</p-card>
+    <div class="px-2 pt-5 aboutMeDisplaytext-justify">{{ data.aboutMe }}</div>
+  </p-card>
 
-<p-card class="card">
-  <div class="px-1 dataDisplay mb-3">
-    {{ data.professionalExperienceTitle }}
-  </div>
-  <div class="overflow-hidden card-container indigo-container">
-    <div
-      class="overflow-auto border-round border-1 border-blue-600"
-      style="height: 200px"
-    >
-      <div *ngFor="let professionalExperience of data.professionalExperiences">
-        <div>
-          <div class="sticky top-0 font-bold text-white bg-blue-600 p-4">
-            {{ professionalExperience.company }} -
-            {{ professionalExperience.date }}
-          </div>
-          <p class="surface-overlay p-4 m-0">
-            {{ professionalExperience.lastPosition }}
-          </p>
+  <p-card class="card">
+    <div class="relative" style="height: 300px">
+      <div class="absolute top-0 left-0 px-1 w-full dataDisplay">
+        {{ data.experienceTitle }}
+      </div>
+      <div
+        class="absolute overflow-auto surface-overlay mt-6 p-2 line-height-3 text-justify"
+        style="height: 250px"
+      >
+        <div *ngFor="let experience of data.professionalXps">
+          {{ experience }}
         </div>
       </div>
     </div>
-  </div>
-</p-card>
+  </p-card>
+
+  <p-card class="card">
+    <div class="px-1 dataDisplay mb-3">
+      {{ data.developmentToolsTitle }}
+    </div>
+    <p-carousel
+      [value]="data.developmentTools"
+      [numVisible]="4"
+      [numScroll]="4"
+      [autoplayInterval]="2000"
+    >
+      <ng-template let-developmentTool pTemplate>
+        <div
+          class="row flex align-items-center justify-content-center text-center dataDisplay"
+        >
+          <img src="{{ developmentTool.icon }}" height="50px" />
+          <div class="mx-2">{{ developmentTool.name }}</div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </p-card>
+
+  <p-card class="card">
+    <div class="px-1 dataDisplay mb-3">{{ data.knowledgementTitle }}</div>
+    <p-accordion>
+      <div *ngFor="let knowledgement of data.knowledgements; let i = index">
+        <p-accordionTab
+          header="{{ knowledgement.name }}"
+          [(selected)]="activeState[i]"
+        >
+          <p>{{ knowledgement.description }}</p>
+        </p-accordionTab>
+      </div>
+    </p-accordion>
+  </p-card>
+
+  <p-card class="card">
+    <div class="px-1 dataDisplay mb-3">{{ data.languageTitle }}</div>
+    <div class="py-2" *ngFor="let language of data.languages">
+      <p-fieldset>
+        <ng-template pTemplate="header"> {{ language.name }}</ng-template>
+        {{ language.level }}
+      </p-fieldset>
+    </div>
+  </p-card>
+
+  <p-card class="card">
+    <div class="px-1 dataDisplay mb-3">
+      {{ data.educationalBackgroundTitle }}
+    </div>
+    <div class="overflow-hidden card-container">
+      <div
+        class="overflow-auto border-round border-1 border-blue-600"
+        style="height: 300px"
+      >
+        <div *ngFor="let educationalBackground of data.educationalBackgrounds">
+          <div>
+            <div class="sticky top-0 font-bold text-white bg-blue-600 p-3">
+              {{ educationalBackground.institution }} -
+              {{ educationalBackground.date }}
+            </div>
+            <p class="surface-overlay p-3 m-0">
+              {{ educationalBackground.course }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </p-card>
+
+  <p-card class="card">
+    <div class="px-1 dataDisplay mb-3">
+      {{ data.professionalExperienceTitle }}
+    </div>
+    <div class="overflow-hidden card-container">
+      <div
+        class="overflow-auto border-round border-1 border-blue-600"
+        style="height: 300px"
+      >
+        <div
+          *ngFor="let professionalExperience of data.professionalExperiences"
+        >
+          <div>
+            <div class="sticky top-0 font-bold text-white bg-blue-600 p-3">
+              {{ professionalExperience.company }} -
+              {{ professionalExperience.date }}
+            </div>
+            <p class="surface-overlay p-3 m-0">
+              {{ professionalExperience.lastPosition }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </p-card>
+</div>

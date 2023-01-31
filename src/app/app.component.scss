@@ -16,14 +16,30 @@ h1 {
   padding: 0rem !important;
 }
 
-.dataDisplay {
-  font-size: 22px;
-  padding-bottom: 0.2rem;
+@media screen and (max-width: 699px) {
+  .aboutMeDisplay {
+    font-size: 16px;
+    padding-bottom: 0.2rem;
+    padding-top: 1rem;
+    text-align: justify;
+  }
+
+  .dataDisplay {
+    font-size: 18px;
+    padding-bottom: 0.2rem;
+  }
 }
 
-.aboutMeDisplay {
-  font-size: 18px;
-  padding-bottom: 0.2rem;
-  padding-top: 1rem;
-  text-align: justify;
+@media screen and (min-width: 700px) {
+  .aboutMeDisplay {
+    font-size: 18px;
+    padding-bottom: 0.2rem;
+    padding-top: 1rem;
+    text-align: justify;
+  }
+
+  .dataDisplay {
+    font-size: 22px;
+    padding-bottom: 0.2rem;
+  }
 }
