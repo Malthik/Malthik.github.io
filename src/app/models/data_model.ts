@@ -6,7 +6,7 @@ import { ProfessionalExperienceModel } from './professional_experience_model';
 
 export class DataModel {
   name: String | null = null;
-  addressLine: String | null = null;
+  occupation: String | null = null;
   addressLocalRef: String | null = null;
   phone: String | null = null;
   email: String | null = null;
