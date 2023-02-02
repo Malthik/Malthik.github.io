@@ -13,8 +13,10 @@ export class AppComponent implements OnInit {
   activeState: boolean[] = [false, false, false, false, false, false];
 
   ngOnInit() {
-    const url = 'assets/data.json';
+    const url = 'https://localhost:49155/data';
     this.http.get<DataModel>(url).subscribe((res) => {
+      console.log(res);
+
       this.data = res;
     });
   }
