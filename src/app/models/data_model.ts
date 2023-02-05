@@ -14,7 +14,7 @@ export class DataModel {
   gitHub: String | null = null;
   qualities: String[] = [];
   aboutMeTitle: String | null = null;
-  aboutMe: String | null = null;
+  aboutMe: String[] = [];
   experienceTitle: String | null = null;
   professionalXps: String[] = [];
   developmentToolsTitle: String | null = null;
