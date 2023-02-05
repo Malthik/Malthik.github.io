@@ -1,4 +1,14 @@
-<div class="lg:px-6 xl:px-6 lg:mx-8 xl:mx-8">
+<div
+  *ngIf="inProgress"
+  class="col-12 flex align-items-center justify-content-center text-center py-0"
+>
+  <h1>This page is under maintenance</h1>
+  <div class="loading-indicator">
+    <p-progressSpinner> </p-progressSpinner>
+  </div>
+</div>
+
+<div *ngIf="!inProgress" class="lg:px-6 xl:px-6 lg:mx-8 xl:mx-8">
   <p-card class="card">
     <div
       class="grid mt-3 flex align-items-center justify-content-center text-right"
