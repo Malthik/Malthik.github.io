@@ -67,7 +67,11 @@
         </div>
       </div>
     </div>
-    <div class="px-2 pt-5 text-justify">{{ data.aboutMe }}</div>
+    <div class="px-2 pt-5">
+      <div *ngFor="let info of data.aboutMe" class="text-justify">
+        {{ info }}
+      </div>
+    </div>
   </p-card>
 
   <p-card class="card">

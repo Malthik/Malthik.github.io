@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { DataModel } from './models/data_model';
 
 @Component({
@@ -13,7 +14,9 @@ export class AppComponent implements OnInit {
   activeState: boolean[] = [false, false, false, false, false, false];
 
   ngOnInit() {
-    const url = 'https://localhost:49155/data';
+    const url = environment.apiUrls.v1 + 'data';
+
+    console.log(url);
     this.http.get<DataModel>(url).subscribe((res) => {
       console.log(res);
 
