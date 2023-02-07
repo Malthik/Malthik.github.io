@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   activeState: boolean[] = [false, false, false, false, false, false];
   inProgress = true;
   noData = false;
-  noDataInfo = 'This page is under maintenance';
+  noDataInfo = 'This page is under maintenance, please come back later.';
 
   constructor(private http: HttpClient) {}
 
