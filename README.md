@@ -1,3 +1,3 @@
-This project was generated with Angular and uses the deployment managed by GitHub Pages.
+This project was generated with Angular CLI and uses the deployment managed by GitHub Pages.
 
-Access malthik.github.io.
+Access the [Page](https://malthik.github.io) and see the result.
