@@ -111,14 +111,14 @@
     </div>
   </p-card>
 
-  <p-card class="card">
+  <p-card class="card" onchange="screenChange()">
     <div class="px-1 dataDisplay mb-3">
       {{ data.developmentToolsTitle }}
     </div>
     <p-carousel
       [value]="data.developmentTools"
-      [numVisible]="4"
-      [numScroll]="4"
+      [numVisible]="carouselValue"
+      [numScroll]="carouselValue"
       [autoplayInterval]="2000"
     >
       <ng-template let-developmentTool pTemplate>
