@@ -7,7 +7,7 @@ import { DataModel } from './models/data_model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.scss', '../styles.scss'],
 })
 export class AppComponent implements OnInit {
   data: DataModel = new DataModel();
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
       .pipe<DataModel>(
         catchError((err) => {
           this.noData = true;
-          return throwError(this.noDataInfo);
+          return throwError(() => this.noDataInfo);
         })
       )
       .subscribe((res) => {
@@ -36,21 +36,21 @@ export class AppComponent implements OnInit {
       });
   }
 
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    this.setCarouselValues(window.innerWidth);
+  }
+
   setCarouselValues(width: number) {
     this.carouselValue =
-      width < 400
+      width < 440
         ? 1
-        : width < 600
+        : width < 640
         ? 2
         : width < 840
         ? 3
         : width < 1200
         ? 4
         : 5;
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onWindowResize() {
-    this.setCarouselValues(window.innerWidth);
   }
 }

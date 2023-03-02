@@ -1,14 +1,11 @@
-<div
-  *ngIf="inProgress"
-  class="col-12 flex align-items-center justify-content-center text-center py-5"
->
+<div *ngIf="inProgress" class="centerContent text-center col-12 flex py-5">
   <h1 *ngIf="noData">{{ noDataInfo }}</h1>
   <div *ngIf="!noData">
     <div
       pAnimate
       enterClass="flipleft"
       leaveClass="fadeoutleft"
-      class="flex justify-content-center align-items-center animation-duration-2000 animation-ease-out"
+      class="flex centerContent animation-duration-2000 animation-ease-out"
     >
       <h1>Aguarde, as informações estão sendo carregadas...</h1>
     </div>
@@ -21,12 +18,8 @@
 
 <div *ngIf="!inProgress" class="lg:px-6 xl:px-6 lg:mx-8 xl:mx-8">
   <p-card class="card">
-    <div
-      class="grid mt-3 flex align-items-center justify-content-center text-right"
-    >
-      <div
-        class="profileImg flex align-items-center justify-content-center grid ml-3"
-      >
+    <div class="grid mt-3 flex align-items-center text-right">
+      <div class="profileImg flex grid ml-3">
         <div
           pAnimate
           enterClass="flip"
@@ -66,9 +59,7 @@
         </div>
       </div>
 
-      <div
-        class="col-12 flex align-items-center justify-content-center text-center py-0"
-      >
+      <div class="col-12 flex justify-content-center text-center py-0">
         <h1>{{ data.name?.toUpperCase() }}</h1>
       </div>
     </div>
@@ -77,11 +68,9 @@
   <p-card class="card">
     <div class="px-1 dataDisplay mb-3">{{ data.aboutMeTitle }}</div>
     <div class="card-container overflow-hidden">
-      <div
-        class="flex flex-wrap flex align-items-center justify-content-center"
-      >
+      <div class="flex flex-wrap justify-content-center">
         <div
-          class="flex-1 md:flex-none border-2 border-blue-600 flex align-items-center justify-content-center font-bold text-white m-2 px-5 py-3 border-round"
+          class="flex-1 md:flex-none qualitiesBullet"
           *ngFor="let quality of data.qualities"
         >
           {{ quality }}
