@@ -1,4 +1,7 @@
-<div *ngIf="inProgress" class="centerContent text-center col-12 flex py-5">
+<div
+  *ngIf="inProgress"
+  class="justify-content-center text-center col-12 flex py-5"
+>
   <h1 *ngIf="noData">{{ noDataInfo }}</h1>
   <div *ngIf="!noData">
     <div
@@ -16,7 +19,7 @@
   </div>
 </div>
 
-<div *ngIf="!inProgress" class="lg:px-6 xl:px-6 lg:mx-8 xl:mx-8">
+<div *ngIf="!inProgress" class="lg:px-8 xl:px-8 lg:mx-8 xl:mx-8">
   <p-card class="card">
     <div class="grid mt-3 flex align-items-center text-right">
       <div class="profileImg flex grid ml-3">
